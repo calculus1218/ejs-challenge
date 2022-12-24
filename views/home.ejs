@@ -1,0 +1,19 @@
+
+<%- include("partials/header"); -%>
+<h1>Home</h1>
+<p><%= Displayp1  %></p>
+
+
+<% formInput.forEach(function(letter){ %>
+  <h1><%= letter.title %></h1>
+  <p><%= letter.comments %></p>
+  <%}) %>
+
+<%- include("partials/footer"); -%>
+
+<!-- 
+<% for (let i=0; i< formInput.length; i++){ %>
+    <% console.log(formInput[i].title) %>
+ 
+ <%} %>
+  --> 
